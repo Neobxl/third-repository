@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/JosefinSans-Medium.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #f5f2f2;
+$color-2: salmon;
+$color-3: #2565e4;
+
+
+@mixin verticalCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-1;
+  background: url(../assets/img/ocean.webp) center/cover no-repeat;
+  min-height: 100vh;
+  // @include verticalCenter;
+}
+li {
+  list-style-type: none;
+  color: black;
+}
+
+p{
+  color: #f5f2f2da;
+}
+
+h1{
+  margin-bottom: 10px;
+  background-color: #f5f2f25a;
+}
